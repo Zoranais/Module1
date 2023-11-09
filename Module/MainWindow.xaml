@@ -1,0 +1,40 @@
+﻿<Window x:Class="Module.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Module"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="129*"/>
+                <ColumnDefinition Width="31*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="53*"/>
+                <RowDefinition Height="9*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Column="1" Grid.Row="1" Content="Form Army" FontSize="18px" Margin="0,0,0,0" Click="Button_Click"/>
+            <StackPanel Grid.Column="1" Grid.Row="0" Margin="0,0,0,0" Orientation="Vertical">
+                <Label Content="Magicians"></Label>
+                <TextBox x:Name="MagicianInput">0</TextBox>
+                <Label Content="Crossbowman"></Label>
+                <TextBox x:Name="CrossbowmanInput">0</TextBox>
+                <Label Content="Catapults"></Label>
+                <TextBox x:Name="CatapultsInput">0</TextBox>
+            </StackPanel>
+            <ListBox x:Name="ArmyOutput"></ListBox>
+            <StackPanel Grid.Row="1" Width="120" HorizontalAlignment="Left" Margin="20,0,0,0">
+                <TextBlock Text="Price"></TextBlock>
+                <TextBlock x:Name="PriceOutput"></TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Width="120" HorizontalAlignment="Right" Margin="0,0,20,0">
+                <TextBlock Text="Speed"></TextBlock>
+                <TextBlock x:Name="SpeedOutput"></TextBlock>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>
