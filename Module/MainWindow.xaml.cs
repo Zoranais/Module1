@@ -48,6 +48,7 @@ public partial class MainWindow : Window
 
     private void FillTable(IArmyStorage storage)
     {
+        ArmyOutput.Items.Clear();
         foreach (var item in storage.Army) 
         {
             ArmyOutput.Items.Add($"{item}. Ціна: {item.Price} злотих. Швидкість: {item.Speed} км/г.");
